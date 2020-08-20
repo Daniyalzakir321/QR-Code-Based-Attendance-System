@@ -1,0 +1,408 @@
+/* =============== Index Html =============== */
+#body{
+    background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
+    text-align: center !important;
+  }
+  #heading{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    color: white;
+    text-shadow:1.5px 1.5px 3px black;
+    background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
+    padding-top: 10px;
+    cursor: text;
+    
+  }
+  #heading>span{
+    font-size: 55px;
+  }
+  
+  #id,#pass{
+  text-align: center !important;
+  border-radius: 25px !important;
+  height: 50px;
+  width: 300px;
+  box-shadow: 3px 3px 5px solid gray;
+  font-size: 20px;
+  border: 1.5px solid black;
+  margin-top: 5px;
+  margin: auto;
+  
+  }
+  #id:hover,#pass:hover{
+  box-shadow: 1px 1px 10px solid whitesmoke !important;
+  }
+  
+  #input:focus,#pass:focus{
+  box-shadow: 0px 0px 10px solid whitesmoke !important;
+  }
+  
+#pass{
+    -webkit-text-security: disc;
+} 
+
+  #btn{
+  border: 1.5px solid black;
+  margin-top: 1px;
+  text-align: center;
+  border-radius: 30px;
+  height: 45px;
+  width: 150px;
+  background-color: white;
+  box-shadow: 3px 3px 5px solid gray;
+  font-size: 20px;
+  font-family: Ubuntu;
+  }
+  
+  #btn:hover{
+  box-shadow: 10px 10px 10px solid whitesmoke !important;
+  }
+  
+#AdminLogin{
+padding-top: 5px;
+  color: white; 
+  font-family: Ubuntu;
+}
+  #login{
+border: 2px solid white;
+border-radius: 20px;
+box-shadow: 1px 1px 10px black;
+
+}
+
+
+
+  @media only screen and (max-width: 800px) {
+     #heading{
+      padding-top: 10px !important;
+      font-size: 47px !important;
+    }
+     
+    #heading>span{
+      font-size: 45px;
+    }
+  
+    #id,#pass{
+      margin-top: 0px !important;
+      font-size: 18px;
+    }
+  
+    #btn{
+      margin-top: 0px !important;
+    }
+  
+    #login{
+      width: 93%;
+    }
+    #AdminLogin{
+      padding-top: 15px;
+    }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    /* =============== Main Html ============*/
+
+  
+  #attensys,h1{
+    font-family: Ubuntu;
+    text-align: center;
+    color: white;
+    text-shadow:1px 1px 3px black;
+    background: linear-gradient(to right, rgb(113, 124, 228),rgb(71, 89, 252),rgb(113, 124, 228)); 
+    height: 70px;
+    padding-top: 10px;
+    position: relative;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+  #avatar{
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+  position: relative;
+  right: 18px;
+  top: -62px;
+  cursor: pointer;
+  }
+  #avatar:hover{
+    box-shadow: 0px 0px 20px whitesmoke;
+}
+
+  #hover{
+    box-shadow: 0px 0px 50px whitesmoke;
+  }
+  
+  #name{
+    text-transform: capitalize !important;
+  }
+
+
+#foot{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 30px ;
+    width: 100%;
+    background: linear-gradient(to right, rgb(113, 124, 228),rgb(71, 89, 252),rgb(113, 124, 228)); 
+    position: fixed;
+    bottom: 0px;
+    text-align: center;  
+
+}
+
+
+#foot>a{
+    color: white;
+    font-family: Ubuntu;
+    text-align: center;
+    margin-left: 45px;
+}
+
+
+
+#logout{
+    margin-top: 1.5px;
+    height: 25px;
+    margin-right: 7px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+#logout:hover{
+box-shadow: 0px 0px 15px white;
+}
+
+#back-to-top{
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    width: 31px;
+    background-color: rgb(225, 225, 230);
+    border-radius: 15px;
+}
+
+#back-to-top:hover{
+    background-color: rgb(197, 194, 194);
+    border-radius: 15px;
+}
+
+
+#list>li{
+list-style:none ;
+background-color: rgb(113, 124, 228);
+color: white;
+margin-top:15px;
+padding-top:7px;
+border-radius: 15px;
+width: 900px;
+height: 40px;
+border:0.5px solid black;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  body{
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    }
+  
+    #attensys{
+    width: 100% !important;
+     padding-top: 10px;
+    position: fixed;
+    top: 0px;
+  }
+  
+  #avatar{
+  height: 43px;
+  border-radius: 20px;
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  }
+}
+
+
+
+/*==================== AddData.html Firebase =========================*/
+#add,#search,#update,#del{
+width:110px;
+height: 17px;
+padding-bottom: 30px;
+border:1px solid black;
+border-radius: 20px;
+font-family: Ubuntu;
+}
+
+
+#a,#b,#c,#d{
+border:1px solid rgb(160, 160, 160);
+margin-bottom: 10px;
+}
+
+#add-data-body{
+  overflow-y: scroll !important;  
+  margin-bottom: 60px;
+}
+
+    
+#qr0>img{
+  height: 150px ;
+  width: 170px ;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+#sf-btn{
+  margin-top: -5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+#add-data-body{
+overflow-y: scroll !important;  
+margin-bottom: 50px;
+  }
+
+  #add,#search,#update,#del{
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+#h1{
+  padding-bottom: 105px;
+}
+
+#git-link{
+margin-left: 0px !important;
+}
+
+}
+
+
+/* ============================ Main.html ============================ */  
+#main-color-body{
+  background-color: #ffffff;
+  overflow-x:hidden;
+}
+
+#head{
+  background-color: black;
+}
+
+h5{
+font-family: Ubuntu;
+text-indent: 0.3cm;
+}
+
+h5>span{
+  border-right:1px solid black;
+  margin: 0px 30px;
+}
+
+table{ 
+  margin-left:1px ;
+  margin-top:-6px ;
+  border-radius: 15px;
+  position: absolute;
+}
+#th>td{
+border:1px solid rgb(209, 206, 206);
+font-family: Ubuntu;
+padding: 5px 50px;
+font-size: 20px ;
+text-align:center;
+border-radius: 15px;
+}
+
+td{
+  border:1px solid rgb(211, 210, 210);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align:center;
+  border-radius: 15px;
+}
+
+
+#qrscan{
+  margin-top: -1px !important;
+  padding-top: 3px;
+  position: absolute;
+  top: 30;
+  right: 10px;
+  background-color: rgb(113, 124, 228);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#btns>p{
+  border: 1px solid black !important;
+background-color: #ffffff;
+box-shadow: 0px 0px 5px black;
+}
+
+#btns>p:hover{
+background-color: rgb(245, 245, 245);
+box-shadow: 0px 0px 8px rgb(122, 122, 122);
+}
+
+#btns{
+  position: absolute; 
+  bottom: 25px;
+  margin-left:5px;
+  text-align: center;
+}
+
+#scan-btn,#add-btn{
+  border: 1.5px solid black;
+  margin-top: 1px;
+  text-align: center;
+  border-radius: 30px;
+  height: 45px;
+  width: 160px;
+  background-color: white;
+  box-shadow: 3px 3px 5px solid gray;
+  font-size: 20px;
+  font-family: Ubuntu;
+}
+
+@media only screen and (max-width: 800px) {
+  table{ 
+    margin-top: 72px;
+    border-radius: 15px;
+  }
+
+  #qrscan{
+    margin-top: 78px !important;
+    position: fixed;
+    right: 5px;
+    background-color: rgb(113, 124, 228);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #btns{
+    position: absolute;
+    top: 1700px;
+    left: 370px;
+    margin-left:-5px;
+  }
+  
+}

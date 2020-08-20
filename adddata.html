@@ -1,0 +1,102 @@
+<!-- 
+Name: Muhammad Daniyal 
+Section: B
+Roll No: 31
+Semester : 7th  (BSCS) 
+Term Project: MS-AZURE BASED ATTENDANCE SYSTEM
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon-icon.svg">    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="../QR-Code Generator/qrcode.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+    <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDBm__891NU3wK4TiJu4hzLd4IPn0S8omc",
+    authDomain: "qr-code-attendance-system-pro.firebaseapp.com",
+    databaseURL: "https://qr-code-attendance-system-pro.firebaseio.com",
+    projectId: "qr-code-attendance-system-pro",
+    storageBucket: "qr-code-attendance-system-pro.appspot.com",
+    messagingSenderId: "115233383152",
+    appId: "1:115233383152:web:1e608fe11094f378f0d835",
+    measurementId: "G-JCK44M8TML"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+    </script>
+    <title>Attendance System</title>
+</head>
+
+<body id="add-data-body">
+
+    <div>
+
+        <div>
+            <h1 id="h1">STUDENT INFORMATION</h1>
+            <img class="float-right" onclick="avatar()" src="Images/avatar.svg" alt="avatar" id="avatar">
+        </div>
+
+
+        <br>
+        <div class="container col-md-5 sf" >
+        Student ID:<input type="text" class="form-control" id="a" placeholder="ID">
+        Student Name:<input type="text" class="form-control" id="b" placeholder="Name">
+        Contact:<input type="text" class="form-control" id="c" placeholder="Contact">
+        Email:<input type="text" class="form-control" id="d" placeholder="Email"> 
+        </div>
+
+        <br>
+
+        <div id="sf-btn"> 
+            <button class="btn btn-light" id="add" onclick="adding()">&nbsp; ADD &nbsp; </button>
+            <button class="btn btn-light" id="search" onclick="search()">SEARCH</button>
+            <button class="btn btn-light" id="update" onclick="update()">UPDATE</button>
+            <button class="btn btn-light" id="del" onclick="del()">DELETE</button>
+        
+        </div>
+
+        <!-- QR Generation -->
+        <div id="qr0">
+        </div>
+
+
+        <div id="foot">
+            <a target="_blank" href="https://github.com/Daniyalzakir321" id="git-link">© 2020 Copyright: Muhammad Daniyal</a>
+            <img src="Images/logout.svg" class="float-right" alt="logout" onclick="logOut()" id="logout">
+        </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+<script src="Sweet Alert JS/sweetalert2@9.js"></script>
+
+</html>

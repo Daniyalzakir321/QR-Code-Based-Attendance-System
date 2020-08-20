@@ -1,0 +1,30 @@
+#preview{
+   width:100%px;
+   border-radius: 20px;
+   border: 1px solid black;
+   box-shadow: 2px 2px 10px black;
+}
+
+.labelsRadio{
+margin-left:180px ;
+}
+
+@media only screen and (max-width: 800px) {
+#qrscanner{
+ padding-bottom: 105px !important;
+}
+
+#preview{
+   margin-top:8px;
+   width:100% !important;
+   border-radius: 20px;
+   border: 1px solid black;
+   box-shadow: 2px 2px 10px black;
+}
+
+.labelsRadio{
+   margin-bottom:100px !important;
+   margin-left:28px ;
+}
+
+}
